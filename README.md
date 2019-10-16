@@ -19,20 +19,23 @@ The phone numbers have to be international format (https://support.twilio.com/hc
 
 ### Testing a notification
 
-`sudo -u nagios ./host-by-sms.sh \
+```ini
+sudo -u nagios ./host-by-sms.sh \
   -d 'LONGDATE' \
   -l 'HOSTALIAS' \
   -n 'HOSTDISPLAYNAME' \
   -o 'HOSTOUTPUT' \
   -r '+XXXX' \
   -s 'HOSTSTATE' \
-  -t 'NOTIFICATIONTYPE'`
+  -t 'NOTIFICATIONTYPE'
+```
 
 ```ini
 Output SMS : [PROBLEM] Host knucklehead-dispaly-name is WARNING!
 ```
 
-`sudo -u nagios ./service-by-sms.sh \
+```ini
+sudo -u nagios ./service-by-sms.sh \
   -d 'LONGDATE' \
   -e 'SERVICENAME' \
   -l 'HOSTALIAS' \
@@ -42,6 +45,7 @@ Output SMS : [PROBLEM] Host knucklehead-dispaly-name is WARNING!
   -s 'SERVICESTATE' \
   -t 'NOTIFICATIONTYPE' \
   -u 'SERVICEDISPLAYNAME'`
+```
 
 ```ini
 Output SMS :  [RECOVERY] processes on knucklehead-dispaly-name is OK!
