@@ -31,7 +31,7 @@ sudo -u nagios ./host-by-sms.sh \
 ```
 
 ```ini
-Output SMS : [PROBLEM] Host knucklehead-dispaly-name is WARNING!
+Output SMS : [PROBLEM] Host host-display-name is WARNING!
 ```
 
 ```ini
@@ -48,7 +48,7 @@ sudo -u nagios ./service-by-sms.sh \
 ```
 
 ```ini
-Output SMS :  [RECOVERY] processes on knucklehead-dispaly-name is OK!
+Output SMS :  [RECOVERY] processes on host-display-name is OK!
 ```
 
 ### Icinga2 objects
